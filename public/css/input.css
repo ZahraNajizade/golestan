@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* fonts */
+  @font-face {
+    font-family: "IRANSansLight";
+    src: url(../font/IRANSansLight.woff) format("woff");
+  }
+  @font-face {
+    font-family: "eicons";
+    src: url(../font/eicons.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Awesome";
+    src: url(../font/Awesome.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "lato";
+    src: url(../font/lato.woff2) format("woff2");
+  }
+
+  /* elements */
+  input[type="radio"] {
+    @apply hidden;
+  }
+}
+
+@layer components {
+  /* animation */
+  @keyframes toLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .toLeft {
+    animation-name: toLeft;
+    animation-duration: 1.25s;
+    @apply dark:animate-none;
+  }
+  .zoomIn {
+    animation-name: zoomIn;
+    animation-duration: 1.25s;
+    @apply dark:animate-none;
+  }
+
+  /* aparat */
+  .h_iframe-aparat_embed_frame {
+    position: relative;
+  }
+  .h_iframe-aparat_embed_frame .ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .h_iframe-aparat_embed_frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* header */
+  .a1 {
+    @apply px-[15px] py-[12px] t1:px-[11px] t1:py-[13px] t2:px-[20px] t1:text-[16px] text-[14px] text-[#AFB2B4] hover:text-[#fff] leading-[20px] transition-all duration-[0.4s] block relative;
+    /* dark */
+    @apply dark:p-0 dark:text-[16px] dark:text-[#fff] dark:hover:text-[#cf5050];
+  }
+  .li1 {
+    @apply d1:after:h-[30px] d1:after:border-l-[1px] d1:after:border-l-[#4D4D52] t1:flex t1:items-center t1:flex-wrap relative;
+    /* dark */
+    @apply dark:after:hidden dark:flex dark:flex-nowrap dark:h-fit;
+  }
+  .a2 {
+    @apply px-[15px] py-[12px] t1:px-[20px] t1:py-[13px] mr-[8px] text-[14px] text-[#AFB2B4] hover:text-[#fff] leading-[20px] block;
+  }
+  .ul2 {
+    @apply hidden group-hover/subMenu:block t1:absolute t1:bg-[#2D2D2D] t1:top-[40px] t1:min-w-[182px];
+  }
+
+  /* header dark */
+  .burgerMenu {
+    @apply w-full h-[3px] rounded-[1.5px] bg-black;
+  }
+  .beforeSlideMenu {
+    @apply content-['V'] order-1 pr-[8px] pt-[12px] font-[900] text-[12px] scale-y-[0.4];
+  }
+
+  /* dark */
+  .textImage {
+    background-image: url(../image/hospital.jpg);
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 70px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* hover */
+  .hoverButton {
+    @apply hover:bg-[#ED1C24] hover:text-[#fff];
+  }
+
+  /* /////////////////////////////////////////////////////////////////////////// */
+
+  .text {
+    @apply text-[#7A7A7A] break-words text-[16px] font-[100] leading-[36px] text-justify p-[10px];
+  }
+  .title {
+    @apply p-[10px] text-[#FF0000] break-words text-[20px] font-[700] leading-[1];
+  }
+  .line {
+    @apply block border-t-[1px] border-t-[#DBDBDB];
+  }
+
+  /* card */
+  .imgFit {
+    @apply absolute object-cover h-full;
+    /* drak */
+    @apply dark:h-[450px] dark:brightness-[70%];
+  }
+  .parentFit {
+    @apply relative w-full overflow-hidden;
+    padding-bottom: calc(0.91 * 100%);
+    /* dark */
+    @apply dark:p-0 dark:overflow-visible text-[20px] font-extrabold font-sans;
+    /* after */
+    @apply after:hidden dark:after:flex after:w-[60px] after:h-[60px] after:absolute after:bg-[#f1f74dc8] after:rounded-full after:top-[16px] after:right-[16px]  after:items-center after:text-center after:justify-center after:content-['40m'] after:z-10;
+    /* before */
+    @apply before:hidden dark:before:flex before:w-[60px] before:h-[60px] before:absolute before:bg-[#f1f74dc8] before:rounded-full before:top-[92px] before:right-[16px] before:z-10 before:items-center before:text-center before:justify-center before:content-['Easy'];
+  }
+  .cardText {
+    @apply text-[#7A7A7A] break-words text-[14px] font-[100] leading-[30px] text-justify relative mb-[20px] min-h-[120px];
+    /* dark */
+    @apply dark:text-[#ababab] dark:font-[600] dark:text-[18px] dark:m-0 dark:absolute dark:bottom-[-60px] dark:pl-[24px] dark:z-10 dark:group-hover:bottom-[20px]  dark:transition-all dark:duration-[0.2s] dark:ease-linear;
+    /* before */
+    @apply before:hidden dark:before:block before:absolute before:inset-[-50px] before:z-[7] before:bg-[linear-gradient(0deg,_rgba(0,0,0,.9)_50%,_rgba(225,225,225,0)_100%)] group-hover:before:top-[200px] before:transition-all before:duration-[0.2s]  before:ease-linear;
+  }
+  .cardTitle {
+    @apply text-[#FF0000] break-words text-[20px] font-[200] leading-[1.4] mb-[18px];
+    /* dark */
+    @apply dark:text-[#fff] dark:m-0 dark:absolute dark:bottom-[100px] dark:text-[24px] dark:font-[700] dark:z-10 dark:group-hover:bottom-[180px] dark:transition-all dark:duration-[0.2s]  dark:ease-linear;
+  }
+  .cardButton {
+    @apply px-[20px] py-[7px] text-[#7C7D7E] text-[14px] border-[1px] border-[#C8C8C8] break-words rounded-[8px] leading-[26px] ml-[5px] my-[5px] inline-block hover:bg-[#ED1C24] hover:text-[#fff];
+    /* dark */
+    @apply dark:hidden;
+  }
+  .card {
+    @apply shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)] relative overflow-hidden;
+    /* dark */
+    @apply dark:shadow-none dark:rounded-[16px] dark:h-[450px] dark:bg-transparent dark:scale-[0.9];
+    /* before */
+    @apply before:hidden dark:before:block before:absolute before:inset-[-120px] before:z-[5] before:bg-[linear-gradient(0deg,_rgba(0,0,0,.9)_0%,_rgba(225,225,225,0.1)_100%)] hover:before:bottom-[0] before:transition-all before:duration-[0.2s]  before:ease-linear;
+  }
+  .cardTitleText {
+    @apply p-[22px];
+    /* dark */
+    @apply dark:h-full dark:p-[24px];
+  }
+
+  /* footer */
+  .contactCss {
+    @apply h-[55px] bg-no-repeat max-w-[53px] w-full;
+  }
+
+  /* product */
+
+  .textP {
+    @apply bg-[#1a1a1a] rounded-t-[32px] relative z-10 top-[-40px] p-[32px] m-0 max-w-none d1:max-w-[550px] d1:bottom-[40px] d1:top-auto d1:left-[-2px] d1:absolute d1:rounded-b-[32px];
+  }
+  .imgP {
+    @apply object-cover h-[300px] t1:h-[400px] d1:h-[500px];
+  }
+  .products {
+    @apply flex flex-wrap gap-[50px] p-[16px] justify-center;
+  }
+  .titleP {
+    @apply absolute rounded-t-[32px] bg-[#1a1a1a] w-min text-nowrap py-[18px] px-[32px] text-[24px] font-[900] text-[#fff] top-[-30px] mx-auto left-[0] right-[0];
+  }
+  .darkText {
+    @apply text-[#ababab]  font-normal m-0 p-0;
+  }
+}
