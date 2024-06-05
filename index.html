@@ -21,9 +21,9 @@
     </script>
     <!-- dark mode end -->
   </head>
-  <body dir="rtl" class="bg-[#e9e9e9] font-[IRANSansLight] dark:bg-[#121212]">
+  <body dir="rtl" class="bg-[#e9e9e9] font-[IRANSansLight] dark:bg-[#16171B]">
     <div
-      class="bg-[#fff] overflow-hidden mx-auto shadow-[0_1px_4px_0_rgba(0,0,0,0.15)] w-full max-w-[1600px] dark:shadow-none dark:bg-transparent"
+      class="bg-[#fff] overflow-hidden mx-auto shadow-[0_1px_4px_0_rgba(0,0,0,0.15)] w-full max-w-[1600px] dark:shadow-none dark:bg-transparent dark:max-w-[1366px]"
     >
       <header
         class="mx-auto max-w-[1600px] relative h-[181.5px] t1:h-[168.5px] d1:h-[100.5px] dark:h-[64px] dark:d1:h-[72px]"
@@ -32,7 +32,7 @@
           class="bg-[url('../image/bg_footer.png')] fixed top-0 right-0 left-0 z-20 d1:h-[100.5px] mx-auto max-w-[1600px] t1:h-[168.5px] min-h-[181.5px] t1:min-h-0 dark:bg-none dark:h-[64px] dark:min-h-0 dark:d1:top-[8px] dark:d1:right-[50px] dark:max-w-[1366px]"
         >
           <div
-            class="dark:d1:mx-[32px] dark:d1:rounded-[16px] dark:bg-[#1F1F1F] dark:max-w-[1366px]"
+            class="dark:d1:mx-[32px] dark:d1:rounded-[16px] dark:bg-[#202125] dark:max-w-[1366px]"
           >
             <div
               class="max-w-[1109px] mx-auto relative d1:flex d1:p-0 items-center t1:pt-[20px] t1:pb-[30px] d1:h-[100.5px] dark:flex dark:justify-between dark:h-[64px] dark:px-[16px] dark:py-0 dark:max-w-[1366px]"
@@ -85,33 +85,38 @@
               </div>
 
               <div
-                class="group mx-auto inline-block t1:w-full hover:w-full dark:w-fit"
+                class="mx-auto inline-block t1:w-full hover:w-full dark:w-fit"
               >
-                <div
-                  class="p-[8px] inline-block t1:hidden mr-[7.5px] mt-[130px] dark:hidden"
+                <input type="checkbox" id="burgerMenu" />
+                <label for="burgerMenu" class="dark:hidden">
+                  <div
+                    class="p-[8px] inline-block t1:hidden mr-[7.5px] mt-[130px]"
+                  >
+                    <i
+                      class="before:content-['\e816'] font-[eicons] text-[#AFB2B4] text-[32px] not-italic font-[400] block leading-[32px]"
+                    ></i>
+                  </div>
+                </label>
+
+                <label
+                  for="burgerMenu"
+                  class="hidden dark:flex flex-wrap w-[26px] gap-[5px] dark:d1:hidden dark:mr-[12px]"
                 >
-                  <i
-                    class="before:content-['\e816'] font-[eicons] text-[#AFB2B4] text-[32px] not-italic font-[400] block leading-[32px]"
-                  ></i>
-                </div>
-                <div
-                  class="hidden dark:flex flex-wrap w-[26px] gap-[5px] dark:d1:hidden"
-                >
-                  <div class="dark:burgerMenu"></div>
-                  <div class="dark:burgerMenu"></div>
-                  <div class="dark:burgerMenu"></div>
-                </div>
+                  <div class="dark:burgerMenu1"></div>
+                  <div class="dark:burgerMenu2"></div>
+                  <div class="dark:burgerMenu3"></div>
+                </label>
                 <nav
-                  class="whitespace-nowrap overflow-y-scroll t1:overflow-visible h-[100vh] hidden t1:block t1:h-auto d1:mx-auto d1:pr-[155px] t1:pt-[80px] t1:mb-[-45px] t1:mt-[30px] d1:my-0 d1:py-0 group-hover:block p-[10px] dark:hidden dark:d1:block dark:m-0 dark:px-0 dark:pt-[8px]"
+                  class="whitespace-nowrap overflow-y-scroll t1:overflow-visible h-[100vh] hidden t1:block t1:h-auto d1:mx-auto d1:pr-[155px] t1:pt-[80px] t1:mb-[-45px] t1:mt-[30px] d1:my-0 d1:py-0 p-[10px] dark:hidden dark:d1:block dark:m-0 dark:px-0 dark:pt-[8px] dark:absolute dark:d1:static dark:w-[100vw] dark:d1:w-fit dark:max-w-[500px] dark:d1:max-w-none dark:bg-[#1a1b1d] dark:d1:bg-transparent dark:left-[-8px] dark:top-0 dark:h-[100vh] dark:d1:h-fit dark:overflow-y-scroll dark:d1:overflow-visible"
                 >
                   <ul
-                    class="mt-[-4px] t1:flex t1:justify-center d1:pt-[25px] dark:p-0 dark:flex dark:gap-[20px] dark:items-center"
+                    class="mt-[-4px] t1:flex t1:justify-center d1:pt-[25px] dark:d1:p-0 dark:flex dark:gap-[20px] dark:items-center dark:flex-wrap dark:d1:flex-nowrap dark:p-[32px]"
                   >
-                    <li class="li1 order-[-3]">
+                    <li class="li1 dark:order-[-3]">
                       <a href="#" class="a1">صفحه اصلی</a>
                     </li>
                     <div
-                      class="hidden dark:flex h-[14px] w-[2px] bg-black rounded-[4px]"
+                      class="hidden dark:d1:flex h-[14px] w-[2px] bg-[#F8CE46] rounded-[4px]"
                     ></div>
                     <li class="li1 group/subMenu dark:before:beforeSlideMenu">
                       <a href="#" class="a1">شرکت گلستان</a>
@@ -200,10 +205,10 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="li1 order-[-2]">
+                    <li class="li1 dark:order-[-2]">
                       <a href="#" class="a1">قرعه کشی</a>
                     </li>
-                    <li class="li1 order-[-1]">
+                    <li class="li1 dark:order-[-1]">
                       <a href="#" class="a1">استخدام</a>
                     </li>
                     <li class="li1 group/subMenu dark:before:beforeSlideMenu">
@@ -234,14 +239,16 @@
       <main>
         <!-- Lottery -->
         <div
-          class="bg-[linear-gradient(190deg,_#FBFBFB_0%,_#D2D2D2_100%)] dark:bg-none"
+          class="bg-[linear-gradient(190deg,_#FBFBFB_0%,_#D2D2D2_100%)] dark:bg-none dark:relative"
         >
           <div
-            class="max-w-[1000px] mx-auto flex flex-wrap min-h-[404px] d1:min-h-[457px] t1:flex-nowrap items-center"
+            class="max-w-[1000px] mx-auto flex flex-wrap min-h-[404px] d1:min-h-[457px] t1:flex-nowrap items-center dark:justify-center"
           >
-            <div class="pr-[45px] d2:p-[10px] t1:w-[45%] t2:w-[50%]">
+            <div
+              class="pr-[45px] d2:p-[10px] t1:w-[45%] t2:w-[50%] dark:pl-[16px]"
+            >
               <div
-                class="pt-[30px] t1:pt-[10px] mb-[21px] text-[#FF0000] break-words text-[30px] font-[300] leading-[1]"
+                class="pt-[30px] t1:pt-[10px] mb-[21px] text-[#FF0000] break-words text-[30px] font-[300] leading-[1] dark:text-[#fff] dark:font-[700]"
               >
                 <h2>قرعه‌کشی ماهیانه گلستان</h2>
               </div>
@@ -260,10 +267,10 @@
                   الزامی است.
                 </h2>
               </div>
-              <div>
+              <div class="dark:buttonParent">
                 <a
                   href="#"
-                  class="text-[#7C7D7E] py-[12px] px-[24px] bg-white text-[15px] border-[1px] border-[#C8C8C8] break-words rounded-[8px] leading-[15px] inline-block hoverButton"
+                  class="text-[#7C7D7E] py-[12px] px-[24px] bg-white text-[15px] border-[1px] border-[#C8C8C8] break-words rounded-[8px] leading-[15px] inline-block hoverButton dark:buttonDark"
                   >اطلاعات بیشتر</a
                 >
               </div>
@@ -284,7 +291,9 @@
         </div>
 
         <!-- introduction text -->
-        <div class="toLeft mt-[30px] p-[10px] max-w-[700px] mx-auto">
+        <div
+          class="toLeft mt-[30px] p-[10px] max-w-[700px] mx-auto dark:my-[80px]"
+        >
           <div class="title">
             <h2>معرفی گلستان</h2>
           </div>
@@ -292,14 +301,15 @@
           <div class="text">
             <h2>
               آنچه که امروز با نام مجموعه
-              <span class="text-[#ff0000]">گلستان </span>می‌شناسیم در سال 1329
-              بنیان نهاده شد. زمانی که شرکت گلستان فعالیت خود را با بسته‌بندی و
-              توزیع چای پاکتی آغاز کرد. با گذر زمان و رشد اقتصاد کشور، نهال
-              «گلستان» به تدریج تقویت شد و شاخ و برگ گرفت. فعالیت‌های «گلستان»
-              با تهیه، تولید و بسته‌بندی بهترین محصولات غذایی گسترش پیدا کرد.
-              <span class="text-[#ff0000]">گلستان </span>پس از سال‌ها تلاش
-              همچنان می‌کوشد تا به کمک تجربه‌های اندوخته شده در این سال‌ها
-              کالاهایی قابل اعتماد و با کیفیت تولید نماید.
+              <span class="text-[#ff0000] dark:text-[#F8CE46]">گلستان </span
+              >می‌شناسیم در سال 1329 بنیان نهاده شد. زمانی که شرکت گلستان فعالیت
+              خود را با بسته‌بندی و توزیع چای پاکتی آغاز کرد. با گذر زمان و رشد
+              اقتصاد کشور، نهال «گلستان» به تدریج تقویت شد و شاخ و برگ گرفت.
+              فعالیت‌های «گلستان» با تهیه، تولید و بسته‌بندی بهترین محصولات
+              غذایی گسترش پیدا کرد.
+              <span class="text-[#ff0000] dark:text-[#F8CE46]">گلستان </span>پس
+              از سال‌ها تلاش همچنان می‌کوشد تا به کمک تجربه‌های اندوخته شده در
+              این سال‌ها کالاهایی قابل اعتماد و با کیفیت تولید نماید.
             </h2>
           </div>
           <div class="text mt-[15px]">
@@ -307,23 +317,28 @@
               هدفمندی و برنامه‌ریزی موثر، ایمان و عزم راسخ برای دستیابی به اهداف
               تعیین شده، به کار گیری همکاران مجرب و دلسوز، استفاده از روش های
               نوین بازاریابی و مشتری محوری از جمله عوامل مهم در استراتژی
-              <span class="text-[#ff0000]">شرکت گلستان </span> است.
+              <span class="text-[#ff0000] dark:text-[#F8CE46]"
+                >شرکت گلستان
+              </span>
+              است.
             </h2>
           </div>
           <div class="title mt-[50px]">محصولات گلستان​</div>
           <div class="text">
             <p>
-              <span class="text-[#ff0000]">نام تجاری گلستان</span> قدمتی به
-              اندازه عمر شرکت گلستان دارد. گلستان ممتازترین محصولات خود را با
-              این نام تجاری عرضه می‌کند. مصرف‌کنندگان محصولات گلستان همواره از
-              این نام تجاری خاطره محصولاتی ممتاز و منحصر بفرد دارند و با اطمینان
-              از نهایت کیفیت این نام تجاری حمایت می‌کنند.
+              <span class="text-[#ff0000] dark:text-[#F8CE46]"
+                >نام تجاری گلستان</span
+              >
+              قدمتی به اندازه عمر شرکت گلستان دارد. گلستان ممتازترین محصولات خود
+              را با این نام تجاری عرضه می‌کند. مصرف‌کنندگان محصولات گلستان
+              همواره از این نام تجاری خاطره محصولاتی ممتاز و منحصر بفرد دارند و
+              با اطمینان از نهایت کیفیت این نام تجاری حمایت می‌کنند.
             </p>
           </div>
         </div>
 
         <!-- statistics -->
-        <div class="my-[105px] zoomIn hidden t1:block">
+        <div class="my-[105px] zoomIn hidden t1:block dark:hidden">
           <div class="p-[10px] flex max-w-[841px] mx-auto">
             <div class="p-[10px]">
               <div class="mb-[21px]">
@@ -611,7 +626,7 @@
 
         <!-- weblog -->
         <div
-          class="py-[30px] t1:px-0 t1:py-[75px] bg-[#CDE4B0] dark:bg-transparent"
+          class="py-[30px] t1:px-0 t1:py-[75px] bg-[#CDE4B0] dark:bg-transparent dark:py-[50px]"
         >
           <div
             class="mx-auto p-[10px] max-w-[331px] t1:max-w-[650px] d1:max-w-[980px] gap-y-[42px] gap-x-[12px] grid grid-cols-1 t1:grid-cols-2 d1:grid-cols-3 dark:gap-x-[40px]"
@@ -686,12 +701,12 @@
         </div>
 
         <!-- video -->
-        <div class="my-[30px] inline-block w-full">
+        <div class="my-[30px] inline-block w-full dark:mx-auto dark:w-full">
           <div
-            class="py-[10px] px-[20px] flex flex-wrap gap-[13px] justify-center"
+            class="py-[10px] px-[20px] flex flex-wrap gap-[13px] justify-center dark:gap-[24px] dark:bg-[#282A35] dark:px-[30px] dark:mx-[16px] dark:rounded-[32px] dark:pt-[40px]"
           >
             <div
-              class="max-w-[320px] mb-[40px] border-[1px] border-[#DADADA] shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] dark:shadow-none dark:border-none dark:overflow-hidden dark:rounded-[32px]"
+              class="max-w-[320px] mb-[40px] border-[1px] border-[#DADADA] shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] dark:shadow-none dark:border-none dark:overflow-hidden dark:rounded-[32px] dark:max-w-[300px] dark:bg-[#141518]"
             >
               <div class="mb-[21px]">
                 <div class="h_iframe-aparat_embed_frame">
@@ -707,7 +722,7 @@
               </div>
 
               <div
-                class="mb-[21px] pr-[20px] text-[#FF0000] text-[17px] font-bold leading-[35px]"
+                class="mb-[21px] pr-[20px] text-[#FF0000] text-[17px] font-bold leading-[35px] dark:text-[#F8CE46]"
               >
                 <h2>سالاد نودل</h2>
               </div>
@@ -722,10 +737,12 @@
                 </h2>
               </div>
 
-              <div class="mr-[20px] mb-[20px]">
+              <div
+                class="mr-[20px] mb-[20px] dark:flex dark:justify-center dark:mx-0 dark:mt-[32px]"
+              >
                 <a
                   href="#"
-                  class="px-[24px] py-[12px] text-[#7C7D7E] text-[15px] border-[1px] border-[#C8C8C8] rounded-[8px] leading-[15px] inline-block hoverButton"
+                  class="px-[24px] py-[12px] text-[#7C7D7E] text-[15px] border-[1px] border-[#C8C8C8] rounded-[8px] leading-[15px] inline-block hoverButton dark:border-none dark:bg-[#282A35] dark:text-white"
                 >
                   <span class="inline-block">ویدیوهای بیشتر</span>
                 </a>
@@ -733,7 +750,7 @@
             </div>
 
             <div
-              class="max-w-[320px] mb-[40px] border-[1px] border-[#DADADA] shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] dark:shadow-none dark:border-none dark:overflow-hidden dark:rounded-[32px]"
+              class="max-w-[320px] mb-[40px] border-[1px] border-[#DADADA] shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] dark:shadow-none dark:border-none dark:overflow-hidden dark:rounded-[32px] dark:max-w-[300px] dark:bg-[#141518]"
             >
               <div class="mb-[21px]">
                 <div class="h_iframe-aparat_embed_frame">
@@ -748,7 +765,7 @@
               </div>
 
               <div
-                class="mb-[21px] pr-[20px] text-[#FF0000] text-[17px] font-bold leading-[35px]"
+                class="mb-[21px] pr-[20px] text-[#FF0000] text-[17px] font-bold leading-[35px] dark:text-[#F8CE46]"
               >
                 <h2>اینستاگرام هاتی نودل</h2>
               </div>
@@ -763,10 +780,12 @@
                 </h2>
               </div>
 
-              <div class="mr-[20px] mb-[20px]">
+              <div
+                class="mr-[20px] mb-[20px] dark:flex dark:justify-center dark:mx-0 dark:mt-[32px]"
+              >
                 <a
                   href="#"
-                  class="px-[24px] py-[12px] text-[#7C7D7E] text-[15px] border-[1px] border-[#C8C8C8] rounded-[8px] leading-[15px] inline-block hoverButton"
+                  class="px-[24px] py-[12px] text-[#7C7D7E] text-[15px] border-[1px] border-[#C8C8C8] rounded-[8px] leading-[15px] inline-block hoverButton dark:border-none dark:bg-[#282A35] dark:text-white"
                 >
                   <span class="inline-block">ادامه مطلب</span>
                 </a>
@@ -774,7 +793,7 @@
             </div>
 
             <div
-              class="max-w-[320px] mb-[40px] border-[1px] border-[#DADADA] shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] hidden d1:block dark:shadow-none dark:border-none dark:overflow-hidden dark:rounded-[32px]"
+              class="max-w-[320px] mb-[40px] border-[1px] border-[#DADADA] shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] hidden d1:block dark:shadow-none dark:border-none dark:overflow-hidden dark:rounded-[32px] dark:max-w-[300px] dark:bg-[#141518]"
             >
               <div class="mb-[21px]">
                 <div class="h_iframe-aparat_embed_frame">
@@ -789,7 +808,7 @@
               </div>
 
               <div
-                class="mb-[21px] pr-[20px] text-[#FF0000] text-[17px] font-bold leading-[35px]"
+                class="mb-[21px] pr-[20px] text-[#FF0000] text-[17px] font-bold leading-[35px] dark:text-[#F8CE46]"
               >
                 <h2>برنج گلستان</h2>
               </div>
@@ -804,10 +823,12 @@
                 </h2>
               </div>
 
-              <div class="mr-[20px] mb-[20px]">
+              <div
+                class="mr-[20px] mb-[20px] dark:flex dark:justify-center dark:mx-0 dark:mt-[32px]"
+              >
                 <a
                   href="#"
-                  class="px-[24px] py-[12px] text-[#7C7D7E] text-[15px] border-[1px] border-[#C8C8C8] rounded-[8px] leading-[15px] inline-block hoverButton"
+                  class="px-[24px] py-[12px] text-[#7C7D7E] text-[15px] border-[1px] border-[#C8C8C8] rounded-[8px] leading-[15px] inline-block hoverButton dark:border-none dark:bg-[#282A35] dark:text-white"
                 >
                   <span class="inline-block">مشاهده محصولات</span>
                 </a>
@@ -817,11 +838,15 @@
         </div>
 
         <!-- Social responsibilities -->
-        <div class="dark:flex dark:flex-wrap dark:d1:flex-nowrap">
+        <div
+          class="dark:flex dark:flex-wrap dark:d1:flex-nowrap dark:pt-[80px] dark:pb-[40px] dark:justify-center dark:d1:pb-[80px]"
+        >
           <div
-            class="bg-[#105153] h-[600px] flex items-center dark:h-fit dark:bg-transparent"
+            class="bg-[#105153] h-[600px] flex items-center dark:h-fit dark:bg-transparent dark:d1:pr-[32px]"
           >
-            <div class="flex flex-wrap w-full relative">
+            <div
+              class="flex flex-wrap w-screen relative dark:flex dark:justify-center dark:d1:block dark:d1:w-fit"
+            >
               <div
                 class="mb-[21px] text-center w-full text-[#D5ECE1] text-[18px] font-[100] leading-[35px] dark:hidden"
               >
@@ -877,42 +902,43 @@
           </div>
 
           <!-- image -->
-          <div class="h-[20px] relative dark:h-fit">
+          <div class="h-[20px] relative dark:h-fit dark:mx-auto dark:d1:mx-0">
             <div
               class="absolute top-[-281px] flex justify-center w-full dark:static"
             >
               <img
                 src="./public/image/hospital.jpg"
                 alt=""
-                class="shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)] dark:shadow-none dark:d1:max-w-[400px] dark:d1:rounded-r-[32px] dark:d1:rounded-tl-[0px] dark:rounded-t-[32px] dark:brightness-[40%]"
+                class="shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)] dark:shadow-none dark:d1:max-w-[400px] dark:d1:rounded-r-[32px] dark:d1:rounded-tl-[0px] dark:brightness-[40%]"
               />
             </div>
           </div>
 
           <!-- text -->
           <div
-            class="p-[20px] flex flex-wrap max-w-[700px] mx-auto my-[90px] dark:m-0 dark:max-w-none"
+            class="p-[20px] flex flex-wrap max-w-[700px] mx-auto my-[90px] dark:m-0 dark:man-w-none dark:mt-[32px] dark:px-[40px]"
           >
             <div
-              class="mb-[21px] w-full text-[#FF0000] break-words text-[20px] font-[700] leading-[1]"
+              class="mb-[21px] w-full text-[#FF0000] break-words text-[20px] font-[700] leading-[1] dark:text-[#82B1C9] dark:max-w-[600px]"
             >
               <h2>مسئوليت‌های اجتماعی گلستان</h2>
             </div>
             <div
-              class="mb-[41px] w-full text-[#818588] break-words text-[15px] font-[400] leading-[36px] text-justify"
+              class="mb-[41px] w-full text-[#818588] break-words text-[15px] font-[400] leading-[36px] text-justify dark:max-w-[600px]"
             >
               <p>
                 كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین،
                 قابل‌احترام‌ترین و مطلوب‌ترین كسب‌وكارها آنهایی هستند كه كاری
                 فراتر از درآمدزایی ایجاد كنند؛‌ آنهایی كه آمده‌اند تا از تجربه و
                 امکاناتشان برای حل مشكلات جامعه و محیط زندگی خود استفاده كنند.
-                <strong class="text-[#FF0000]">گلستان </strong>در فعالیت‌های‌
-                اجتماعی خود،‌ گسترده وسیعی از فعالیت‌های عام‌المنفعه را در
-                دستوركار خود قرار داده است.
+                <strong class="text-[#FF0000] dark:text-[#82B1C9]"
+                  >گلستان </strong
+                >در فعالیت‌های‌ اجتماعی خود،‌ گسترده وسیعی از فعالیت‌های
+                عام‌المنفعه را در دستوركار خود قرار داده است.
               </p>
             </div>
 
-            <div class="pt-[15px] t1:pt-0 ml-[5px]">
+            <div class="pt-[15px] t1:pt-0 ml-[5px] dark:hidden">
               <a
                 href="#"
                 class="text-[#7C7D7E] py-[12px] px-[24px] bg-white text-[15px] border-[1px] border-[#C8C8C8] break-words rounded-[8px] leading-[15px] inline-block hoverButton dark:rounded-r-none dark:rounded-l-[12px] dark:leading-[1] dark:border-none"
@@ -923,40 +949,72 @@
         </div>
       </main>
 
-      <footer class="dark:flex">
+      <footer
+        class="dark:flex dark:flex-wrap dark:bg-[#202125] dark:t1:pt-[24px] dark:t1:rounded-t-[80px]"
+      >
         <!-- 1 : contact -->
         <div
-          class="p-[20px] flex flex-wrap items-center justify-center bg-[#EEEFEF]"
+          class="p-[20px] flex flex-wrap items-center justify-center bg-[#EEEFEF] dark:order-2 dark:w-full dark:gap-[12px] dark:pb-[16px] dark:pt-[32px] dark:bg-transparent"
         >
           <div
             class="contactCss bg-[url(../image/footer_contact_1.png)] hover:bg-[url(../image/footer_contact_hover_1.png)] max-w-[55px]"
           >
             <a href="#" class="block h-full"></a>
+            <img
+              src="./public/image/facebook.png"
+              alt=""
+              class="hidden dark:block"
+            />
           </div>
           <div
             class="contactCss bg-[url(../image/footer_contact_2.png)] hover:bg-[url(../image/footer_contact_hover_2.png)]"
           >
             <a href="#" class="block h-full"></a>
+            <img
+              src="./public/image/instagram.png"
+              alt=""
+              class="hidden dark:block"
+            />
           </div>
           <div
             class="contactCss bg-[url(../image/footer_contact_3.png)] hover:bg-[url(../image/footer_contact_hover_3.png)]"
           >
             <a href="#" class="block h-full"></a>
+            <img
+              src="./public/image/linkedin.png"
+              alt=""
+              class="hidden dark:block"
+            />
           </div>
           <div
             class="contactCss bg-[url(../image/footer_contact_4.png)] hover:bg-[url(../image/footer_contact_hover_4.png)]"
           >
             <a href="#" class="block h-full"></a>
+            <img
+              src="./public/image/telegram.png"
+              alt=""
+              class="hidden dark:block"
+            />
           </div>
           <div
             class="contactCss bg-[url(../image/footer_contact_5.png)] hover:bg-[url(../image/footer_contact_hover_5.png)]"
           >
             <a href="#" class="block h-full"></a>
+            <img
+              src="./public/image/twitter.png"
+              alt=""
+              class="hidden dark:block"
+            />
           </div>
           <div
             class="contactCss bg-[url(../image/footer_contact_6.png)] hover:bg-[url(../image/footer_contact_hover_6.png)]"
           >
             <a href="#" class="block h-full"></a>
+            <img
+              src="./public/image/whatsapp.png"
+              alt=""
+              class="hidden dark:block"
+            />
           </div>
         </div>
 
@@ -964,9 +1022,15 @@
         <div class="h-[25px] bg-[#ED1C24] dark:hidden"></div>
 
         <!-- 3 : product -->
-        <div class="bg-[url('../image/bg_footer.png')] dark:bg-none">
-          <div class="flex flex-wrap p-[10px] t1:max-w-[700px] mx-auto">
-            <div class="p-[10px] t1:w-[25%] w-full flex flex-col">
+        <div
+          class="bg-[url('../image/bg_footer.png')] dark:bg-none dark:w-full dark:order-1"
+        >
+          <div
+            class="flex flex-wrap p-[10px] t1:max-w-[700px] mx-auto dark:t1:gap-[32px] dark:t1:max-w-[750px] dark:t1:flex-nowrap"
+          >
+            <div class="p-[10px] t1:w-[25%] w-full flex flex-col dark:p-0">
+              <input type="radio" name="productFooter" id="pF1" />
+
               <div class="mb-[21px] flex justify-center dark:hidden">
                 <img
                   src="./public/image/footer_icon_1.png"
@@ -977,18 +1041,20 @@
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div class="mb-[21px] text-center">
-                <h2
-                  class="m-[-9px] text-white text-[16px] font-[100] leading-[1]"
-                >
-                  چای گلستان
-                </h2>
-              </div>
+              <label for="pF1" class="dark:pF">
+                <div class="mb-[21px] text-center dark:my-0">
+                  <h2
+                    class="m-[-9px] text-white text-[16px] font-[100] leading-[1] dark:m-0"
+                  >
+                    چای گلستان
+                  </h2>
+                </div>
+              </label>
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div>
-                <ul>
+              <div class="dark:slideFooter">
+                <ul class="dark:ulFooter">
                   <li class="flex t1:justify-normal justify-center">
                     <a
                       href="#"
@@ -1027,7 +1093,9 @@
                 </ul>
               </div>
             </div>
-            <div class="p-[10px] t1:w-[25%] w-full flex flex-col">
+            <div class="p-[10px] t1:w-[25%] w-full flex flex-col dark:p-0">
+              <input type="radio" name="productFooter" id="pF2" />
+
               <div class="mb-[21px] flex justify-center dark:hidden">
                 <img
                   src="./public/image/footer_icon_2.png"
@@ -1038,18 +1106,21 @@
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div class="mb-[21px] text-center">
-                <h2
-                  class="m-[-9px] text-white text-[16px] font-[100] leading-[1]"
-                >
-                  تی بگ گلستان
-                </h2>
-              </div>
+              <label for="pF2" class="dark:pF">
+                <div class="mb-[21px] text-center dark:my-0">
+                  <h2
+                    class="m-[-9px] text-white text-[16px] font-[100] leading-[1] dark:m-0"
+                  >
+                    تی بگ گلستان
+                  </h2>
+                </div>
+              </label>
+
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div>
-                <ul>
+              <div class="dark:slideFooter">
+                <ul class="dark:ulFooter">
                   <li class="flex t1:justify-normal justify-center">
                     <a
                       href="#"
@@ -1088,7 +1159,9 @@
                 </ul>
               </div>
             </div>
-            <div class="p-[10px] t1:w-[25%] w-full flex flex-col">
+            <div class="p-[10px] t1:w-[25%] w-full flex flex-col dark:p-0">
+              <input type="radio" name="productFooter" id="pF3" />
+
               <div class="mb-[21px] flex justify-center dark:hidden">
                 <img
                   src="./public/image/footer_icon_3.png"
@@ -1099,18 +1172,21 @@
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div class="mb-[21px] text-center">
-                <h2
-                  class="m-[-9px] text-white text-[16px] font-[100] leading-[1]"
-                >
-                  ادويه گلستان
-                </h2>
-              </div>
+              <label for="pF3" class="dark:pF">
+                <div class="mb-[21px] text-center dark:my-0">
+                  <h2
+                    class="m-[-9px] text-white text-[16px] font-[100] leading-[1] dark:m-0"
+                  >
+                    ادويه گلستان
+                  </h2>
+                </div>
+              </label>
+
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div>
-                <ul>
+              <div class="dark:slideFooter">
+                <ul class="dark:ulFooter">
                   <li class="flex t1:justify-normal justify-center">
                     <a
                       href="#"
@@ -1149,7 +1225,9 @@
                 </ul>
               </div>
             </div>
-            <div class="p-[10px] t1:w-[25%] w-full flex flex-col">
+            <div class="p-[10px] t1:w-[25%] w-full flex flex-col dark:p-0">
+              <input type="radio" name="productFooter" id="pF4" />
+
               <div class="mb-[21px] flex justify-center dark:hidden">
                 <img
                   src="./public/image/footer_icon_4.png"
@@ -1160,18 +1238,21 @@
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div class="mb-[21px] text-center">
-                <h2
-                  class="m-[-9px] text-white text-[16px] font-[100] leading-[1]"
-                >
-                  حبوبات گلستان
-                </h2>
-              </div>
+              <label for="pF4" class="dark:pF">
+                <div class="mb-[21px] text-center dark:my-0">
+                  <h2
+                    class="m-[-9px] text-white text-[16px] font-[100] leading-[1] dark:m-0"
+                  >
+                    حبوبات گلستان
+                  </h2>
+                </div>
+              </label>
+
               <div class="mb-[21px] py-[2px] dark:hidden">
                 <span class="border-t-[1px] border-t-[#828991] block"></span>
               </div>
-              <div>
-                <ul>
+              <div class="dark:slideFooter">
+                <ul class="dark:ulFooter">
                   <li class="flex t1:justify-normal justify-center">
                     <a
                       href="#"
@@ -1215,7 +1296,7 @@
 
         <!-- 4 -->
         <div
-          class="bg-[url('../image/bg_footer.png')] break-words p-[10px] text-center dark:bg-none"
+          class="bg-[url('../image/bg_footer.png')] break-words p-[10px] text-center dark:bg-none dark:w-full dark:order-3 dark:my-[-32px]"
         >
           <div class="mt-[30px] mb-[21px]">
             <span
