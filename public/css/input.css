@@ -20,6 +20,10 @@
     font-family: "lato";
     src: url(../font/lato.woff2) format("woff2");
   }
+  @font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins.ttf);
+  }
 
   /* elements */
   input[type="radio"],
@@ -48,6 +52,22 @@
     50% {
       opacity: 1;
     }
+  }
+  @keyframes inDown {
+    0% {
+      opacity: 0;
+    transform: translate3d(0, -100%, 0);
+    }
+    50% {
+      opacity: 1;
+    transform: none;
+    }
+  }
+
+  .inDown{
+    animation-name: inDown;
+    animation-duration: 2s;
+    @apply dark:animate-none;
   }
 
   .toLeft {
@@ -206,7 +226,7 @@
   /* footer */
   .contactCss {
     @apply h-[55px] bg-no-repeat max-w-[53px] w-full;
-    @apply dark:bg-none dark:hover:hidden dark:max-w-[30px] dark:h-[30px];
+    @apply dark:bg-none dark:hover:bg-none dark:max-w-[30px] dark:h-[30px];
   }
   .contactCss img {
     @apply dark:object-cover dark:max-w-[30px] dark:h-[30px];

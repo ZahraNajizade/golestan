@@ -472,6 +472,12 @@ video {
   src: url(../font/lato.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "Poppins";
+
+  src: url(../font/Poppins.ttf);
+}
+
 /* elements */
 
 input[type="radio"],
@@ -610,6 +616,27 @@ input[type="radio"],
   50% {
     opacity: 1;
   }
+}
+
+@keyframes inDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.inDown{
+  animation-name: inDown;
+  animation-duration: 2s;
+}
+
+.inDown:is(.dark *) {
+  animation: none;
 }
 
 .toLeft {
@@ -1205,7 +1232,7 @@ input[id="burgerMenu"]:checked ~ label[for="burgerMenu"]:is(.dark *)::before {
 }
 
 .contactCss:hover:is(.dark *) {
-  display: none;
+  background-image: none;
 }
 
 .contactCss img:is(.dark *) {
@@ -1307,6 +1334,11 @@ input[id="burgerMenu"]:checked ~ label[for="burgerMenu"]:is(.dark *)::before {
 .my-\[30px\] {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.my-\[40px\] {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .my-\[90px\] {
@@ -1744,8 +1776,8 @@ input[id="burgerMenu"]:checked ~ label[for="burgerMenu"]:is(.dark *)::before {
   background-image: url(../image/footer_contact_6.png);
 }
 
-.bg-\[url\(\/public\/image\/recipe-baner-fixedbg\.png\)\] {
-  background-image: url(/public/image/recipe-baner-fixedbg.png);
+.bg-\[url\(\.\.\/image\/recipe-baner-fixedbg\.png\)\] {
+  background-image: url(../image/recipe-baner-fixedbg.png);
 }
 
 .bg-center {
@@ -1824,6 +1856,10 @@ input[id="burgerMenu"]:checked ~ label[for="burgerMenu"]:is(.dark *)::before {
 
 .pl-\[12px\] {
   padding-left: 12px;
+}
+
+.pr-\[15px\] {
+  padding-right: 15px;
 }
 
 .pr-\[20px\] {
@@ -2950,6 +2986,10 @@ input[id="pF1"]:checked ~ .dark\:slideFooter:is(.dark *),
     padding-right: 17px;
   }
 
+  .t1\:pr-\[45px\] {
+    padding-right: 45px;
+  }
+
   .t1\:pt-0 {
     padding-top: 0px;
   }
@@ -3076,6 +3116,10 @@ input[id="pF1"]:checked ~ .dark\:slideFooter:is(.dark *),
 
   .d1\:pr-\[155px\] {
     padding-right: 155px;
+  }
+
+  .d1\:pr-\[30px\] {
+    padding-right: 30px;
   }
 
   .d1\:pt-\[25px\] {
@@ -3207,5 +3251,9 @@ input[id="pF1"]:checked ~ .dark\:slideFooter:is(.dark *),
 
   .d2\:p-\[10px\] {
     padding: 10px;
+  }
+
+  .d2\:pr-\[300px\] {
+    padding-right: 300px;
   }
 }
